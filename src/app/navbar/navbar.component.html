@@ -1,0 +1,39 @@
+<body >
+    <div class="logo" *ngIf="!menu" routerLink="">
+        <img src="assets/icon.png" class="logo1">
+        <img src="assets/realmadridspy.png" class="logo2">
+    </div>
+    <ul>
+        <li routerLink="">أخبار</li>
+        <li routerLink="نتائج">نتائج</li>
+        <li routerLink="مباريات">مباريات</li>
+        <li routerLink="الترتيب">الترتيب</li>
+    </ul>
+    <div class="social">
+        <a href="https://www.facebook.com/realmadridspy" target="_blank"><img src="assets/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/realmadridspy" target="_blank"><img src="assets/instagram.png" alt="Instagram"></a>
+        <a href="https://twitter.com/real_madrid_spy" target="_blank"><img src="assets/twitter.png" alt="Twitter"></a>
+    </div>
+    <div class="menu">
+        <img src="assets/menu.png" (click)="openMenu()" *ngIf="!menu">
+        <div class="menu_content" *ngIf="menu">
+            <div class="logo_menu" *ngIf="menu">
+                <img src="assets/icon.png" class="logo1">
+                <img src="assets/realmadridspy.png" class="logo2">
+            </div>
+            <div class="line"></div>
+            <ul>
+                <li routerLink="">أخبار</li>
+                <li routerLink="نتائج">نتائج</li>
+                <li routerLink="مباريات">مباريات</li>
+                <li routerLink="الترتيب">الترتيب</li>
+            </ul>
+            <div class="social_menu">
+                <a href="https://www.facebook.com/realmadridspy" target="_blank"><img src="assets/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/realmadridspy" target="_blank"><img src="assets/instagram.png" alt="Instagram"></a>
+                <a href="https://twitter.com/real_madrid_spy" target="_blank"><img src="assets/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </div>
+</body>
+<div class="line"></div>

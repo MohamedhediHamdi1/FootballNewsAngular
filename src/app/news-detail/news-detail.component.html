@@ -1,0 +1,23 @@
+<body>
+    <div class="container">
+        <div class="news">
+            <div class="title">{{news?.title}}</div>
+            <img src="{{imgUrl+news?.image}}" >
+            <p>{{news?.description}}</p>
+             </div>
+        <div class="allnews">
+            <div  class="list" *ngFor="let list of list" (click)="navigation(list.title!)">
+                <div class="img">
+                    <img src="{{imgUrl+list.image}}">
+                </div>
+                <div class="column">
+                    <div class="date">
+                        <img src="assets/clock.png" >
+                        <p>{{list.date}}</p>
+                    </div>
+                    <div class="title">{{list.title}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

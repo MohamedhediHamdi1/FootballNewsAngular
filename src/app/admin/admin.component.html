@@ -1,0 +1,35 @@
+<body *ngIf="isLogin">
+    <div class="news">
+        <div class="first">
+            <img src="{{imgUrl+first?.image}}"> 
+            <div class="date">
+                <img src="assets/clock.png" >
+                <p>{{first?.date}}</p>
+            </div>
+            <div class="title"><button (click)="delete(first!.title! )">delete</button>       {{first?.title}}</div>
+        </div>
+        <div class="list" *ngFor="let list of list" >
+           <img src="{{imgUrl+list.image}}"> 
+            <div class="column">
+                <div class="date">
+                    <img src="assets/clock.png" >
+                    <p>{{list.date}}</p>
+                </div>
+                <div class="title"><button (click)="delete(list.title!)">delete</button>  {{list.title}}</div>
+            </div>
+        </div>
+        <div class="more" *ngIf="seeMore" (click)="getNewsList()"><img src="assets/down-arrows.png" alt=""> عرض المزيد</div>
+    </div>
+    <div class="left">
+        <input type="text" id="title" [(ngModel)]="title">
+        <textarea name="" id="decription" cols="50" rows="20" [(ngModel)]="description"></textarea>
+        <input type="file" (change)="onFileChange($event)" accept="image/*">
+        <button (click)="onSubmit()">add</button>
+    </div>
+</body>
+
+<div class="login" *ngIf="!isLogin">
+        <input type="text" required placeholder="Admin" [(ngModel)]="username">
+        <input type="password" required placeholder="Password" [(ngModel)]="password">
+        <div class="button" (click)="login()">Login</div>
+</div>

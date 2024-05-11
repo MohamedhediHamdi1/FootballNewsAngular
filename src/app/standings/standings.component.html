@@ -1,0 +1,38 @@
+<body>
+    <h2>ترتيب الدوري الإسباني</h2>
+    <div class="box">
+        <div class="titles">
+            <div class="left">
+                <div class="rank">#</div>
+                <div class="team">Team</div>
+            </div>
+            <div class="right">
+                <div class="item">P</div>
+                <div class="item">w</div>
+                <div class="item">d</div>
+                <div class="item">L</div>
+                <div class="item">F</div>
+                <div class="item">A</div>
+                <div class="item">GD</div>
+                <div class="item">PTS</div>
+            </div>
+        </div>
+        <div class="list" *ngFor="let list of list ; let last = last" [ngStyle]="{'border-bottom': last ? 'none' : '1px solid #a4752d'}">
+            <div class="left">
+                <div class="rank">{{list.standing_place}}</div>
+                <img src="{{list.team_logo}}" >
+                <div class="team" [ngStyle]="{'color': list.standing_team === 'Real Madrid' ? 'green' : 'black'}">{{list.standing_team}}</div>
+            </div>
+            <div class="right">
+                <div class="item">{{list.standing_P}}</div>
+                <div class="item">{{list.standing_W}}</div>
+                <div class="item">{{list.standing_D}}</div>
+                <div class="item">{{list.standing_L}}</div>
+                <div class="item">{{list.standing_F}}</div>
+                <div class="item">{{list.standing_A}}</div>
+                <div class="item">{{list.standing_GD}}</div>
+                <div class="item">{{list.standing_PTS}}</div>
+            </div>
+        </div>
+    </div>
+</body>

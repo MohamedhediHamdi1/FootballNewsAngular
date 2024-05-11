@@ -1,0 +1,28 @@
+<body>
+    <div class="news">
+        <div class="first" routerLink="news/{{first?.title}}">
+            <img src="{{imgUrl+first?.image}}">
+            <div class="date">
+                <img src="assets/clock.png" >
+                <p>{{first?.date}}</p>
+            </div>
+            <div class="title">{{first?.title}}</div>
+        </div>
+        <div class="list" *ngFor="let list of list" routerLink="news/{{list.title}}">
+           <div class="img"><img src="{{imgUrl+list.image}}"> </div>
+            <div class="column">
+                <div class="date">
+                    <img src="assets/clock.png" >
+                    <p>{{list.date}}</p>
+                </div>
+                <div class="title">{{list.title}}</div>
+            </div>
+        </div>
+        <div class="more" *ngIf="seeMore" (click)="getNewsList()"><img src="assets/down-arrows.png" alt=""> عرض المزيد</div>
+    </div>
+    <div class="left">
+        <p>مرحبًا بك في "ريال مدريد سباي"، الموقع الذي يتيح لك التعمق في عالم نادي ريال مدريد بشكل فريد. نحن هنا لنقدم لك أكثر من مجرد أخبار، بل لنأخذك في رحلة شيقة إلى أعماق تاريخ وروح هذا النادي العريق.</p>
+        <p>على هذا الموقع، ستجد تحليلات مفصلة لكل مباراة، وتقارير حصرية تسلط الضوء على لحظات البطولة ورحلة اللاعبين. نسعى جاهدين لتقديم تجربة فريدة، حيث يمكن للعشاق الاستمتاع بمحتوى غني يعكس جمالية وتألق ريال مدريد.</p>
+        <p>"ريال مدريد سباي" ليس مجرد مصدر للأخبار، بل هو مجتمع يجمع عشاق النادي للتفاعل وتبادل الآراء. انضم إلينا لتكون جزءًا من هذه التجربة الفريدة، حيث يمكنك التعبير عن عشقك للملكي ومشاركة حماسك مع الآخرين.</p>
+    </div>
+</body>

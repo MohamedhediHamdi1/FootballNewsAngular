@@ -1,0 +1,55 @@
+body{
+    width: 100%;
+    height: 60px;
+    background-color: #1c1c20;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+    .line{
+        height: 2px;
+        width: 100%;
+        background-color: #a4752d;
+    }
+    p{
+        margin: 0;
+        color: white;
+        font-size: 0.9em;
+    }
+    .row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        p{
+            margin: 0;
+            color: white;
+            font-size: 0.9em;
+            cursor: pointer;
+        }
+        p:hover{
+            color:#a4752d ;
+        }
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    body{
+        p{
+            font-size: 0.8em;
+        }
+        .row{
+            gap: 15px;
+            p{
+                font-size: 0.8em;
+            }
+        }
+    }
+    
+}
+
+

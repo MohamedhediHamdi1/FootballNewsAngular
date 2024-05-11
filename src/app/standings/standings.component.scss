@@ -1,0 +1,161 @@
+body{
+    background-color: rgb(226, 216, 216);
+    width: 100%;
+    min-height: calc(100vh - 180px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    .box{
+        width: 60%;
+        min-height: calc(100vh - 150px);
+        background-color: white;
+        border-radius: 7px;
+        .titles{
+            height: 25px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 5px;
+            border-bottom: 1px solid #a4752d;
+            .left{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 0 5px;
+                .rank{
+                    width: 30px;
+                    text-align: center;
+                    font-size: 11px;
+                    font-weight: bold;
+                }
+                .team{
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+            }
+            .right{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 0 7px;
+                margin-right: 15px;
+                gap: 15px;
+                .item{
+                    font-size: 13px;
+                    font-weight: bold;
+                    width: 15px;
+                }
+            }
+        }
+        .list{
+            height: 25px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 5px;
+            border-bottom: 1px solid #a4752d;
+            .left{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 0 5px;
+                img{
+                    height: 18px;
+                    max-width: 20px;
+                    margin-right: 5px;
+                }
+                .rank{
+                    width: 30px;
+                    text-align: center;
+                    font-size: 13px;
+                    font-weight: bold;
+                }
+                .team{
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+            }
+            .right{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 0 7px;
+                margin-right: 15px;
+                gap: 15px;
+                .item{
+                    font-size: 13px;
+                    font-weight: bold;
+                    width: 15px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+    body{
+        h2{
+            font-size: 22px;
+        }
+        .box{
+            width: 90%;
+            min-height: calc(100vh - 150px);
+            background-color: white;
+            border-radius: 7px;
+            .titles{
+                .left{
+                    .rank{
+                        width: 25px;
+                        font-size: 10px;
+                    }
+                    .team{
+                        font-size: 12px;
+                    }
+                }
+                .right{
+                    gap: 12px;
+                    .item{
+                        font-size: 11px;
+                        width: 13px;
+                    }
+                }
+            }
+            .list{
+                .left{
+                    margin: 0 5px;
+                    img{
+                        height: 20px;
+                        max-width: 25px;
+                    }
+                    .rank{
+                        width: 25px;
+                        font-size: 11px;
+                    }
+                    .team{
+                        font-size: 12px;
+                    }
+                }
+                .right{
+                    gap: 12px;
+                    .item{
+                        font-size: 11px;
+                        font-weight: bold;
+                        width: 13px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}

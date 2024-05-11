@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300&family=IBM+Plex+Sans+Arabic:wght@200&family=Roboto:wght@300&display=swap');
+
+
+body {
+    background-color: rgb(226, 216, 216);
+    width: 100%;
+    min-height: calc(100vh - 160px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    .en{
+        width: 80%;
+        min-height: calc(100vh - 250px);
+        background-color: white;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px ;
+        h2{
+            padding: 0;
+            margin: 0;
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+        p{
+            margin: 20px 30px;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: 'Roboto',sans-serif;
+            line-height: 25px;
+        }
+    }
+    .ar{
+        width: 80%;
+        min-height: calc(100vh - 250px);
+        background-color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding-top: 50px;
+        h2{
+            padding: 0;
+            margin: 0;
+            margin-right: 30px;
+            margin-top: 20px;
+            direction: rtl;
+        }
+        p{
+            margin: 10px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: 'Roboto',sans-serif;
+            line-height: 25px;
+            direction: rtl;
+        }
+        a{
+            color: blue;
+            cursor: pointer;
+        }
+        .box{
+            height: 30px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+    body {
+        .en{
+            width: 95%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px ;
+            p{
+                font-size: 13px;
+            }
+        }
+        .ar{
+            width: 95%;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            p{
+                font-size: 14px;
+            }
+            .box{
+                height: 25px;
+            }
+        }
+    }
+}

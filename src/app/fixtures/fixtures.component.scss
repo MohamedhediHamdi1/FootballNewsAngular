@@ -1,0 +1,214 @@
+body {
+    background-color: rgb(226, 216, 216);
+    width: 100%;
+    min-height: calc(100vh - 125px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+
+    .list {
+        background-color: white;
+        width: 70%;
+        height: 80px;
+        margin: 5px 0;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .top {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+            width: 100%;
+
+            .align1 {
+                width: 33%;
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+            }
+
+            .team1 {
+                width: 60%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: start;
+            }
+
+            .align2 {
+                width: 33%;
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+            }
+
+            .team2 {
+                width: 60%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: end;
+            }
+
+            .logo {
+                width: 40px;
+                max-height: 50px;
+                margin: 0 0px;
+            }
+
+            .team_name {
+                font-size: 18px;
+                font-weight: bold;
+                margin: 0 10px;
+            }
+
+            .midle {
+                height: 100%;
+                width: 33%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .date {
+                    font-size: 13px;
+                    font-weight: bold;
+                    color: black;
+                }
+
+            
+            }
+        }
+
+        .bottom {
+            height: 20px;
+            width: 100%;
+            border-top: 1px solid #a4752d;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            .stadium {
+                font-size: 10px;
+                color: black;
+                text-align: start;
+                width: 30%;
+                
+            }
+
+            .league {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: end;
+                width: 30%;
+                .league_logo {
+                    max-height: 15px;
+                    margin-right: 10px;
+                }
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        background-color: rgb(226, 216, 216);
+        width: 100%;
+        min-height: calc(100vh - 100px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+
+        h2 {
+            font-size: 18px;
+        }
+
+        .list {
+            background-color: white;
+            width: 90%;
+            height: 70px;
+            margin: 5px 0;
+            border-radius: 4px;
+
+            .top {
+                height: 55px;
+                .align1 {
+                    width: 40%;
+                }
+                .align2 {
+                    width: 40%;
+                }
+                .team1 {
+                    width: 90%;
+                }
+                .team2 {
+                    width: 90%;
+                }
+
+                .logo {
+                    width: 35px;
+                    max-height: 40px;
+                }
+
+                .team_name {
+                    font-size: 12px;
+                    margin: 0 5px;
+                }
+
+                .midle {
+                    
+                    .date {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .bottom {
+                height: 15px;
+                justify-content: space-between;
+
+                .stadium {
+                    text-align: start;
+                    width: 50%;
+                    font-size: 9px;
+                    margin-left: 5px;
+                }
+
+                .league {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: end;
+                    width: 50%;
+                    margin-right: 5px;
+                    .league_logo {
+                        max-height: 13px;
+                        margin-right: 7px;
+                    }
+
+                    p {
+                        font-size: 9px;
+                    }
+                }
+
+            
+            }
+        }
+    }
+
+}
